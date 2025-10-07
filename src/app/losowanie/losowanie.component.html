@@ -1,0 +1,11 @@
+<h3>Losowanie</h3>
+<label>Wpisz ilosc</label>
+<input type="number" [(ngModel)]="ilosc"><br>
+<label>Wpisz Zakres</label>
+<input type="number" [(ngModel)]="zakres"><br>
+<button (click)="losuj()">Losuj</button>
+<div>wyniki:
+    @for (liczba of liczby; track $index) {
+        <div>{{liczba}}</div>
+    }
+</div>
