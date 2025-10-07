@@ -1,1 +1,8 @@
-<p>osoby works!</p>
+<h3>Lista osob</h3>
+@for (czlowiek of ludzie; track $index) {
+    <div class="bloczek">
+      <p>  {{czlowiek.imie}} {{czlowiek.nazwisko}} </p>
+       <img src="{{czlowiek.zdjecie}}" width="150px">
+
+    </div>
+}
